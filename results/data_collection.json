@@ -1,0 +1,144 @@
+{
+  "protocol": {
+    "train_episodes": 120,
+    "horizon": 64,
+    "eval_episodes": 40,
+    "eval_epsilon": 0.4,
+    "eval_seed": 4242,
+    "train_steps": 4000,
+    "note": "epsilon = P(goal-directed heuristic action); 1-epsilon = P(uniform random)",
+    "action_gap": "ball MSE(wrong action) - ball MSE(true action), on contact transitions"
+  },
+  "oracle": {
+    "oracle_action_gap": 0.593574047088623,
+    "oracle_action_gap_contact": 2.3609328269958496
+  },
+  "runs": {
+    "0.0": {
+      "data": {
+        "contact_rate": 0.008723958333333334,
+        "ball_moved_rate": 0.059765625,
+        "action_entropy": 1.609294941951267,
+        "action_entropy_max": 1.6094379124341003,
+        "action_predictable_from_state": 0.19856770833333334,
+        "n_transitions": 7680
+      },
+      "eval": {
+        "ball_mse_true": 0.6649610996246338,
+        "ball_mse_wrong": 0.6655136942863464,
+        "action_gap": 0.0005525946617126465,
+        "ball_mse_true_contact": 2.782285451889038,
+        "ball_mse_wrong_contact": 2.7859368324279785,
+        "action_gap_contact": 0.0036513805389404297,
+        "action_gap_contact_ratio": 1.0013123673332875,
+        "eval_contact_n": 595,
+        "recovered_fraction_contact": 0.0015465838321146138
+      }
+    },
+    "0.15": {
+      "data": {
+        "contact_rate": 0.05677083333333333,
+        "ball_moved_rate": 0.19348958333333333,
+        "action_entropy": 1.6065999552770387,
+        "action_entropy_max": 1.6094379124341003,
+        "action_predictable_from_state": 0.3263020833333333,
+        "n_transitions": 7680
+      },
+      "eval": {
+        "ball_mse_true": 0.6408876180648804,
+        "ball_mse_wrong": 0.6467725038528442,
+        "action_gap": 0.005884885787963867,
+        "ball_mse_true_contact": 2.6974384784698486,
+        "ball_mse_wrong_contact": 2.724580764770508,
+        "action_gap_contact": 0.02714228630065918,
+        "action_gap_contact_ratio": 1.0100622447990197,
+        "eval_contact_n": 595,
+        "recovered_fraction_contact": 0.011496424629410642
+      }
+    },
+    "0.35": {
+      "data": {
+        "contact_rate": 0.20455729166666667,
+        "ball_moved_rate": 0.35989583333333336,
+        "action_entropy": 1.5949272835585306,
+        "action_entropy_max": 1.6094379124341003,
+        "action_predictable_from_state": 0.4739583333333333,
+        "n_transitions": 7680
+      },
+      "eval": {
+        "ball_mse_true": 0.6357265710830688,
+        "ball_mse_wrong": 0.6426159143447876,
+        "action_gap": 0.00688934326171875,
+        "ball_mse_true_contact": 2.622183084487915,
+        "ball_mse_wrong_contact": 2.660952568054199,
+        "action_gap_contact": 0.03876948356628418,
+        "action_gap_contact_ratio": 1.0147851932214929,
+        "eval_contact_n": 595,
+        "recovered_fraction_contact": 0.016421256514788735
+      }
+    },
+    "0.6": {
+      "data": {
+        "contact_rate": 0.31731770833333334,
+        "ball_moved_rate": 0.5430989583333333,
+        "action_entropy": 1.5576191073757577,
+        "action_entropy_max": 1.6094379124341003,
+        "action_predictable_from_state": 0.6744791666666666,
+        "n_transitions": 7680
+      },
+      "eval": {
+        "ball_mse_true": 0.6545451283454895,
+        "ball_mse_wrong": 0.6611897349357605,
+        "action_gap": 0.006644606590270996,
+        "ball_mse_true_contact": 2.6173830032348633,
+        "ball_mse_wrong_contact": 2.661418914794922,
+        "action_gap_contact": 0.044035911560058594,
+        "action_gap_contact_ratio": 1.0168244049516766,
+        "eval_contact_n": 595,
+        "recovered_fraction_contact": 0.018651912098698608
+      }
+    },
+    "1.0": {
+      "data": {
+        "contact_rate": 0.42864583333333334,
+        "ball_moved_rate": 0.6856770833333333,
+        "action_entropy": 1.3858201039512483,
+        "action_entropy_max": 1.6094379124341003,
+        "action_predictable_from_state": 1.0,
+        "n_transitions": 7680
+      },
+      "eval": {
+        "ball_mse_true": 0.8539119958877563,
+        "ball_mse_wrong": 0.8827114105224609,
+        "action_gap": 0.02879941463470459,
+        "ball_mse_true_contact": 2.458576202392578,
+        "ball_mse_wrong_contact": 2.574458360671997,
+        "action_gap_contact": 0.11588215827941895,
+        "action_gap_contact_ratio": 1.0471338485122599,
+        "eval_contact_n": 595,
+        "recovered_fraction_contact": 0.049083208532820596
+      }
+    },
+    "0.35_rebalanced": {
+      "data": {
+        "contact_rate": 0.5070604373436618,
+        "ball_moved_rate": 0.39272169773259097,
+        "action_entropy": 1.5854666404995335,
+        "action_entropy_max": 1.6094379124341003,
+        "action_predictable_from_state": 0.5367546195432905,
+        "n_transitions": 12393
+      },
+      "eval": {
+        "ball_mse_true": 0.6998872756958008,
+        "ball_mse_wrong": 0.6961544752120972,
+        "action_gap": -0.0037328004837036133,
+        "ball_mse_true_contact": 2.4653682708740234,
+        "ball_mse_wrong_contact": 2.5317935943603516,
+        "action_gap_contact": 0.06642532348632812,
+        "action_gap_contact_ratio": 1.026943367557326,
+        "eval_contact_n": 595,
+        "recovered_fraction_contact": 0.028135202631262707
+      }
+    }
+  }
+}

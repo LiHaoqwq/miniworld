@@ -1,0 +1,16 @@
+{
+  "naive": {
+    "recon_fg_mse": 0.021953841671347618,
+    "active_codes": 7,
+    "codebook_size": 48,
+    "perplexity": 2.0081474781036377,
+    "top1_code_share": 0.8371562361717224
+  },
+  "ema_deadcode_fix": {
+    "recon_fg_mse": 0.010517860762774944,
+    "active_codes": 48,
+    "codebook_size": 48,
+    "perplexity": 20.967252731323242,
+    "top1_code_share": 0.217710942029953
+  }
+}
